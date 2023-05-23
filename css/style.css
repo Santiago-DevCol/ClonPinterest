@@ -1,36 +1,218 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-.HeaderPirncipal{
-    border: 1px solid red;
-    width: 100%;
-    height: 50px;
-    display: inline-block;
-    width: 99%;
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
-.HeaderPirncipal .contenedorNav{
+
+.HeaderPirncipal{
+    margin-top: 2px;
+    margin-left:2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    width: 99.5%;
+    height: 80px;
     display: inline-block;
-    border: 1px solid red;
-    width: 99%;
-    height: 90%;
+
+}
+.contenedorNav{
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 8px -8px; 
+    transition: box-shadow 300ms ease-in-out 0s;
     margin-top: 2px;
     margin-left: 2px;
     margin-right: 2px;
     margin-bottom: 2px;
     box-sizing: border-box;
+    position: fixed;
+    z-index: 89;
+    background: white;
 
 }
 .contenedorMenu{
     display: flex;
-    border: 1px solid green;
-    margin: 1px;
     height: 90%;
+    width: 99.5%;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    margin-left: 1px;
+    margin-right: 1px;
+    flex-direction: column;
+    
+}
+.menuFlexMain{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    padding-right: 16px;
+    padding-left: 16px ;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    flex: 1 1 auto;
+    min-height: 0;
+    min-width: 0;
+}
+.organizateItemsMenu{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    height: 56px;
+}
+.mainLogo{
+    display: flex;
+    box-sizing: border-box;
+}
+.IconLogo{
+    color: inherit;
+    outline: none;
+    background: transparent;
+    padding: 0;
+    transition: transform 85ms ease-out;
+}
+.LimiteLogo{
+    display: flex;
+    perspective: 1px;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 48px;
+}
+#pinterest-icon{
+    color: #e60023;
+    display: block;
+    fill: currentColor;
+    stroke-width: 0;
+    
+}
+.mainLogo:hover{
+    background-color: rgba(60,64,67,.08);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mainInicio{
+    display: block;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    border-radius: 24px;
+    height: 48px;
+    min-width: 60px;
+
+}
+.linkInicio{
+    display: block;
+    color: inherit;
+    outline: none;
+    transition: transform 85ms ease-out;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 24px;
+}
+.linkInicio:hover{
+    cursor: pointer;
+}
+.contenInicio{
+    display: block;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+    border-radius: 24px;
+    white-space: nowrap;
+    height: 48px;
+    min-width: 60px;
+}
+.limiteInicio{
+    display: flex;
     margin-bottom: 0;
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
-    flex-direction: column;
-    
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-weight: 400;
+    text-align: center;
 }
+.contenedorBarraBoton{
+    width: 804px;
+    position: relative;
+}
+.barraPrincipalBusqueda{
+    display: flex;
+    min-height: 44px;
+    background: #e9e9e9;;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    margin: auto;
+    
+    max-width: 100%;
+}
+.barraPrincipalBusqueda:hover{
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+.interiorBarra{
+    flex: 1;
+    display: flex;
+    padding: 4px 7px 0px 12px;
+}
+.lupita{
+    display: flex;
+    align-items: center;
+    padding-right: 12px;
+    margin-top: -5px;
+    height: 44px;
+}
+.icon{
+    display: inline-block;
+    fill: currentColor;
+    position: relative;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20px;
+    line-height: 20px;
+    width: 20px;
+    margin-top: 4px;
+    color: #9aa0a6;
+}
+.icon svg{
+    display: block;
+    height: 100%;
+    width: 100%;   
+}
+.areaTexto{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    margin-top: 2px;
+    width: 440px;
+    align-items: center;
+}
+#input-search{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    margin-bottom: 8px;
+    overflow-x: hidden;
+    /*max-height: 20px;*/
+    border:none;
+    resize: none;
+    background-color: transparent;
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    font-size: 15px;
+    flex: 100%;
+}
+
 #mainFooterMobile{
     display: none;
 }
@@ -356,4 +538,156 @@
         padding: 8px;
         box-sizing: border-box;
     }
+    /* comento esto para hcer las imagenes en la vista de desktop
+    /* === Fin Nav Footer ===
+
+    #content{
+        display: block;
+        text-decoration: none;
+        background-color: var(--color-background-default);
+        box-sizing: border-box;
+        min-height: 100vh;
+    }
+    .mainContent{
+        display: block;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+    .layaoutImages{
+        display: block;
+        padding-left: 8px;
+        padding-right: 8px;
+        box-sizing: border-box;
+    }
+    .layaoutImagesTop{
+        display: block;
+        margin-top: 8px;
+        box-sizing: border-box;
+    }
+    .ContenedorGrid{
+        display: block;
+        opacity: 1;
+        box-sizing: border-box;
+        margin-left: -4px;
+        margin-right: -4px;
+    }
+    .organizarContenido{
+        display: block;
+        margin-top: -4px;
+        box-sizing: border-box;
+    }
+    .gridCentrado{
+        text-decoration: none;
+        display: block;
+    }
+    .grillaContenido{
+        display: block;
+        margin: 0 auto;
+        height: auto;
+        position: relative;
+        width: 404px;
+    }
+    .contenedorImages{
+        display: block;
+        transition: transform .2s;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        transform: translateX(0.5px) translateY(0px);
+        width: 201px;
+        height: 386px;
+    }
+    .areaImg{
+        display: block;
+        transition: transform 85ms ease-out;
+        cursor: pointer;
+        border-radius: 0;
+    }
+    .padreImgContenido{
+        display: block;
+        margin-bottom: 0;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 4px;
+        padding-right: 4px;
+        box-sizing: border-box;
+    }
+    .hijoImg{
+        display: block;
+        box-sizing: border-box;
+    }
+    .imgEnlace{
+        color: inherit;
+        outline: none;
+        transition: transform 85ms ease-out;
+        text-decoration: none;
+        border-radius: 16px;
+        display: block;
+    }
+    img{
+        width: calc(12 / 12 * 100%); 
+        position: absolute; 
+        color: transparent; 
+        border-radius: 15px;
+    }
+    .hijoOpt{
+        display: block;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .opt{
+        transition: transform 85ms ease-out;
+        width: calc(12 / 12 * 100%);
+        border-radius: 0;
+
+    }
+    .flexOpt{
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .opt1{
+        box-sizing: border-box;
+        flex: 1 1 auto;
+        min-width: 0;
+        min-height: 0;
+    }
+    .opt1flex{
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+        box-sizing: border-box;
+    }
+    .espaceOpt1{
+        display: block;
+        margin-top: 4px;
+        overflow: hidden;
+        box-sizing: border-box;
+        text-overflow: ellipsis;
+    }
+    .opt2{
+        display: block;
+        right: 12;
+        box-sizing: border-box;
+        margin-left: 4px;
+        height: 26px;
+        width: 24px;
+
+    }
+    .btnOpt2{
+        padding: 0;
+        background-color: transparent;
+        border: 0;
+    }
+    .btnOpt2Flex{
+        perspective: 1px;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        border-radius: 45%;
+        height: 24px;
+        width: 24px;
+    } */
 }
